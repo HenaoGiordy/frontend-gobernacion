@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 20%; 
+    
+}
+
+.botones{
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+
+

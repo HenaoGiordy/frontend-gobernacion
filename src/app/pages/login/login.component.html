@@ -1,4 +1,27 @@
+<div class="container">
+  <p-card
+    header="Login"
+    [style]="{
+      display: 'flex',
+      width: '600px',
+      'justify-content': 'center',
+      'text-align': 'center'
+    }"
+  >
+    <span class="p-float-label">
+      <input pInputText id="username" [style]="{ width: '100%' }" />
+      <label for="username">Username</label>
+    </span>
+    <br />
+    <br />
+    <span class="p-float-label">
+      <p-password [toggleMask]="true"></p-password>
+      <label for="password">Password</label>
+    </span>
 
-<div class="card flex justify-content-center">
-    <p-button label="Check" icon="pi pi-check"></p-button>
+    <div class="botones" >
+        <p-button label="Ingresar" [style]="{width: '100%'}" ></p-button>
+        
+    </div>
+  </p-card>
 </div>
