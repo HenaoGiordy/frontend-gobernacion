@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import studenData from '../../data.json';
+import info from '../../data.json';
 import { TablaComponent } from '../../components/tabla/tabla.component';
 import { DataTable } from '../../interfaces/dataTable';
 import { SidebarComponent } from '../../components/sidebar/sidebar.component';
@@ -14,7 +14,7 @@ import { SidebarComponent } from '../../components/sidebar/sidebar.component';
   styleUrl: './main-layout.component.css'
 })
 export class MainLayoutComponent {
-  informacion : DataTable[] = studenData;
+  informacion : DataTable[] = info;
 
  
 }

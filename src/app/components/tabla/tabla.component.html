@@ -1,28 +1,45 @@
-<p-table styleClass="p-datatable-gridlines" [value]="datos" [paginator]="true" [rows]="10"
-  [showCurrentPageReport]="true" [rowsPerPageOptions]="[10, 20, 40]" [responsive]="true"
-  [globalFilterFields]="['name']">
+<p-table
+  [value]="datos"
+  [paginator]="true"
+  [rows]="40"
+  [showCurrentPageReport]="true"
+  [rowsPerPageOptions]="[40, 50, 60]"
+  responsiveLayout="stack"
+  [globalFilterFields]="['name']"
+  [scrollable]="true"
+  scrollHeight="690px">
   
   <ng-template pTemplate="caption">
     <div class="flex">
       <span class="p-input-icon-left ml-auto">
-        <p-button label="Agregar Registro"></p-button>
+        <app-dialogo></app-dialogo>
       </span>
     </div>
   </ng-template>
+
   <ng-template pTemplate="header">
     <tr>
-      <th>Code</th>
-      <th>Name</th>
-      <th>Category</th>
-      <th>Quantity</th>
+      <th>No. Declaracion</th>
+      <th>Concepto</th>
+      <th>Fecha de Presentación</th>
+      <th>Vigencia</th>
+      <th>Periodo</th>
+      <th>Valor Sanción</th>
+      <th>Valor Intereses de Mora</th>
+      <th>Acciones</th>
     </tr>
   </ng-template>
+
   <ng-template pTemplate="body" let-product>
     <tr>
       <td>{{ product.code }}</td>
       <td>{{ product.name }}</td>
       <td>{{ product.category }}</td>
+      <td>{{ product.category }}</td>
       <td>{{ product.quantity }}</td>
+      <td>{{ product.quantity }}</td>
+      <td>{{ product.quantity }}</td>
+      <td></td>
     </tr>
   </ng-template>
 </p-table>

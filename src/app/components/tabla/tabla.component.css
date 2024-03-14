@@ -1,9 +1,3 @@
-:host{
-    ::ng-deep .p-datatable.p-datatable-gridlines .p-datatable-header {
-        position: sticky;
-        top: 0;
-        
-    }
-
-    
+td, th{
+    text-align: center;
 }
