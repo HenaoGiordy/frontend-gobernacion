@@ -11,4 +11,10 @@
         height: 100%;
         width: 17%;
     }
+
+    ::ng-deep .p-sidebar .p-sidebar-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

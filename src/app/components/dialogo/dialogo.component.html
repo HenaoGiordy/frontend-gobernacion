@@ -1,0 +1,31 @@
+<p-button (click)="showDialog()"  label="Agregar"></p-button>
+<p-dialog header="Agregar Registro" [(visible)]="visible" [style]="{width: '20vw'}" [modal]="true" [transitionOptions]="'0ms'" >
+
+    <form class="flex flex-column gap-2" (ngSubmit)="emitirRegistro()">
+            <label  for="No">No Declaracion</label>
+            <input pInputText [(ngModel)]="registro.numero"  name="No" />
+    
+            <label for="Concepto">Concepto</label>
+            <input pInputText [(ngModel)]="registro.concepto" name="Concepto" />
+    
+            <label for="Fecha">Fecha</label>
+            <input pInputText [(ngModel)]="registro.fecha" name="Fecha" />
+    
+            <label for="Vigencia">Vigencia</label>
+            <input pInputText [(ngModel)]="registro.vigencia" name="Vigencia" />
+    
+            <label for="Periodo">Periodo</label>
+            <input pInputText [(ngModel)]="registro.periodo" name="Periodo"/>
+    
+    
+            <label for="Sancion">Valor Sancion</label>
+            <input pInputText [(ngModel)]="registro.sancion" name="Sancion" />
+    
+            <label for="Intereses">Inteseres Moratorios</label>
+            <input pInputText [(ngModel)]="registro.intereses" name="Intereses" />
+            <p-button type="submit" label="Añadir"></p-button>
+            
+            
+    </form>
+    
+</p-dialog>
