@@ -1,20 +1,14 @@
-<p-table
-  styleClass="p-datatable-gridlines"
-  [value]="datos"
-  [paginator]="true"
-  [rows]="10"
-  [showCurrentPageReport]="true"
-  [rowsPerPageOptions]="[10, 20, 40]"
-  [responsive]="true"
-  [globalFilterFields]="['name']"
-  >
+<p-table styleClass="p-datatable-gridlines" [value]="datos" [paginator]="true" [rows]="10"
+  [showCurrentPageReport]="true" [rowsPerPageOptions]="[10, 20, 40]" [responsive]="true"
+  [globalFilterFields]="['name']">
+  
   <ng-template pTemplate="caption">
     <div class="flex">
-        <span class="p-input-icon-left ml-auto">
-          <p-button label="Agregar Registro"></p-button>
-        </span>
+      <span class="p-input-icon-left ml-auto">
+        <p-button label="Agregar Registro"></p-button>
+      </span>
     </div>
-</ng-template>
+  </ng-template>
   <ng-template pTemplate="header">
     <tr>
       <th>Code</th>
